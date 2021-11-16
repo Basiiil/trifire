@@ -1,0 +1,475 @@
+@import "variable";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  margin: 1.5rem;
+  height: 100vh;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  &-navbar {
+    background: $primary-color;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3);
+
+    span {
+      color: lighten($primary-color, 20);
+    }
+
+    h1 {
+      padding-top: 5rem;
+    }
+
+    .nav-list {
+      padding: 8rem 1rem;
+
+      .list {
+        padding: 15px;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+
+        &.select,
+        &:hover {
+          background-color: lighten($primary-color, 8);
+          border-radius: 50px;
+        }
+      }
+
+      .fas {
+        padding-right: 15px;
+        // position: fixed;
+        // left: 4rem;
+      }
+    }
+  }
+
+  &-body {
+    background: $color-white;
+    border-radius: 50px;
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3);
+
+    &-top {
+      padding: 3rem;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+
+      &-right {
+        img {
+          border-radius: 50%;
+        }
+
+        input {
+          padding: 1rem 2rem;
+          border: none;
+          border-radius: 10px;
+          width: 350px;
+        }
+
+        .far {
+          background: #fff;
+          margin: 0 10px;
+          padding: 1rem;
+          border-radius: 20px;
+        }
+      }
+    }
+
+    &-deals {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2px;
+      margin-left: 1rem;
+
+      &-item {
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        margin: 1rem 0.5rem;
+        padding: 0.5rem;
+
+        h3 {
+          display: inline;
+        }
+
+        .fas {
+          background: lighten($light-pink, 20);
+          padding: 10px;
+          color: $light-pink;
+          border-radius: 50%;
+        }
+
+        %card {
+          margin: 2rem 0.5rem 2rem 0rem;
+          box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3);
+          padding: 1.5rem;
+          border-radius: 20px;
+          position: relative;
+        }
+
+        %circle {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+
+        %public-code {
+          img {
+            border-radius: 50%;
+          }
+          p {
+            display: inline-block;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+
+          h4 {
+            padding: 1rem 0;
+          }
+        }
+
+        &-1 {
+          @extend %card;
+          background: $blue-color;
+          color: #fff;
+
+          .circle {
+            @extend %circle;
+            background: $light-yellow;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1,
+            &-2 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($blue-color, 8);
+              border-radius: 10px;
+            }
+          }
+        }
+
+        &-2 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $light-red;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($blue-color, 20);
+              border-radius: 10px;
+              color: $blue-color;
+            }
+          }
+        }
+
+        &-3 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $light-yellow;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($dark-pink, 20);
+              border-radius: 10px;
+              color: $dark-pink;
+            }
+          }
+        }
+
+        &-4 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $primary-color;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($blue-color, 20);
+              border-radius: 10px;
+              color: $blue-color;
+            }
+
+            &-2 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($dark-pink, 20);
+              border-radius: 10px;
+              color: $dark-pink;
+            }
+          }
+        }
+
+        &-5 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $primary-color;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($light-yellow, 30);
+              border-radius: 10px;
+              color: $light-yellow;
+            }
+          }
+        }
+
+        &-6 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $light-yellow;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($blue-color, 20);
+              border-radius: 10px;
+              color: $blue-color;
+            }
+          }
+        }
+
+        &-7 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $primary-color;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($blue-color, 20);
+              border-radius: 10px;
+              color: $blue-color;
+            }
+          }
+        }
+
+        &-8 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $light-yellow;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($dark-pink, 20);
+              border-radius: 10px;
+              color: $dark-pink;
+            }
+          }
+        }
+
+        &-9 {
+          @extend %card;
+          color: #fff;
+          background: $dark-yellow;
+
+          .circle {
+            @extend %circle;
+            background: $dark-pink;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($dark-yellow, 8);
+              border-radius: 10px;
+            }
+          }
+        }
+
+        &-10 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $primary-color;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($light-yellow, 30);
+              border-radius: 10px;
+              color: $light-yellow;
+            }
+          }
+        }
+
+        &-11 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $primary-color;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($blue-color, 20);
+              border-radius: 10px;
+              color: $blue-color;
+            }
+
+            &-2 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($dark-pink, 20);
+              border-radius: 10px;
+              color: $dark-pink;
+            }
+          }
+        }
+
+        &-12 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $light-red;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($blue-color, 20);
+              border-radius: 10px;
+              color: $blue-color;
+            }
+          }
+        }
+
+        &-13 {
+          @extend %card;
+          color: #fff;
+          background: $dark-pink;
+
+          .circle {
+            @extend %circle;
+            background: $light-yellow;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($dark-pink, 20);
+              border-radius: 10px;
+              color: $dark-pink;
+            }
+          }
+        }
+
+        &-14 {
+          @extend %card;
+
+          .circle {
+            @extend %circle;
+            background: $primary-color;
+          }
+
+          @extend %public-code;
+
+          .lorem {
+            &-1 {
+              padding: 5px;
+              margin-left: 3px;
+              background-color: lighten($primary-color, 20);
+              border-radius: 10px;
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

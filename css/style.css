@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 1.6rem;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize; }
+
+.row {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  margin: 1.5rem;
+  height: 100vh; }
+
+.parent {
+  display: flex;
+  align-items: center; }
+
+.section-navbar {
+  background: #2c7447;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3); }
+  .section-navbar span {
+    color: #4bbb75; }
+  .section-navbar h1 {
+    padding-top: 5rem; }
+  .section-navbar .nav-list {
+    padding: 8rem 1rem; }
+    .section-navbar .nav-list .list {
+      padding: 15px;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center; }
+      .section-navbar .nav-list .list.select, .section-navbar .nav-list .list:hover {
+        background-color: #379259;
+        border-radius: 50px; }
+    .section-navbar .nav-list .fas {
+      padding-right: 15px; }
+
+.section-body {
+  background: #ebf1f1;
+  border-radius: 50px;
+  box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3); }
+  .section-body-top {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center; }
+    .section-body-top-right img {
+      border-radius: 50%; }
+    .section-body-top-right input {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      width: 350px; }
+    .section-body-top-right .far {
+      background: #fff;
+      margin: 0 10px;
+      padding: 1rem;
+      border-radius: 20px; }
+  .section-body-deals {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+    margin-left: 1rem; }
+    .section-body-deals-item {
+      box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      margin: 1rem 0.5rem;
+      padding: 0.5rem; }
+      .section-body-deals-item h3 {
+        display: inline; }
+      .section-body-deals-item .fas {
+        background: #dcaead;
+        padding: 10px;
+        color: #be6865;
+        border-radius: 50%; }
+      .section-body-deals-item .section-body-deals-item-1, .section-body-deals-item .section-body-deals-item-2, .section-body-deals-item .section-body-deals-item-3, .section-body-deals-item .section-body-deals-item-4, .section-body-deals-item .section-body-deals-item-5, .section-body-deals-item .section-body-deals-item-6, .section-body-deals-item .section-body-deals-item-7, .section-body-deals-item .section-body-deals-item-8, .section-body-deals-item .section-body-deals-item-9, .section-body-deals-item .section-body-deals-item-10, .section-body-deals-item .section-body-deals-item-11, .section-body-deals-item .section-body-deals-item-12, .section-body-deals-item .section-body-deals-item-13, .section-body-deals-item .section-body-deals-item-14 {
+        margin: 2rem 0.5rem 2rem 0rem;
+        box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.3);
+        padding: 1.5rem;
+        border-radius: 20px;
+        position: relative; }
+      .section-body-deals-item .section-body-deals-item-1 .circle, .section-body-deals-item-1 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-2 .circle, .section-body-deals-item-2 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-3 .circle, .section-body-deals-item-3 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-4 .circle, .section-body-deals-item-4 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-5 .circle, .section-body-deals-item-5 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-6 .circle, .section-body-deals-item-6 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-7 .circle, .section-body-deals-item-7 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-8 .circle, .section-body-deals-item-8 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-9 .circle, .section-body-deals-item-9 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-10 .circle, .section-body-deals-item-10 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-11 .circle, .section-body-deals-item-11 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-12 .circle, .section-body-deals-item-12 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-13 .circle, .section-body-deals-item-13 .section-body-deals-item .circle, .section-body-deals-item .section-body-deals-item-14 .circle, .section-body-deals-item-14 .section-body-deals-item .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        right: 10px; }
+      .section-body-deals-item .section-body-deals-item-1 img, .section-body-deals-item .section-body-deals-item-2 img, .section-body-deals-item .section-body-deals-item-3 img, .section-body-deals-item .section-body-deals-item-4 img, .section-body-deals-item .section-body-deals-item-5 img, .section-body-deals-item .section-body-deals-item-6 img, .section-body-deals-item .section-body-deals-item-7 img, .section-body-deals-item .section-body-deals-item-8 img, .section-body-deals-item .section-body-deals-item-9 img, .section-body-deals-item .section-body-deals-item-10 img, .section-body-deals-item .section-body-deals-item-11 img, .section-body-deals-item .section-body-deals-item-12 img, .section-body-deals-item .section-body-deals-item-13 img, .section-body-deals-item .section-body-deals-item-14 img {
+        border-radius: 50%; }
+      .section-body-deals-item .section-body-deals-item-1 p, .section-body-deals-item .section-body-deals-item-2 p, .section-body-deals-item .section-body-deals-item-3 p, .section-body-deals-item .section-body-deals-item-4 p, .section-body-deals-item .section-body-deals-item-5 p, .section-body-deals-item .section-body-deals-item-6 p, .section-body-deals-item .section-body-deals-item-7 p, .section-body-deals-item .section-body-deals-item-8 p, .section-body-deals-item .section-body-deals-item-9 p, .section-body-deals-item .section-body-deals-item-10 p, .section-body-deals-item .section-body-deals-item-11 p, .section-body-deals-item .section-body-deals-item-12 p, .section-body-deals-item .section-body-deals-item-13 p, .section-body-deals-item .section-body-deals-item-14 p {
+        display: inline-block;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+      .section-body-deals-item .section-body-deals-item-1 h4, .section-body-deals-item .section-body-deals-item-2 h4, .section-body-deals-item .section-body-deals-item-3 h4, .section-body-deals-item .section-body-deals-item-4 h4, .section-body-deals-item .section-body-deals-item-5 h4, .section-body-deals-item .section-body-deals-item-6 h4, .section-body-deals-item .section-body-deals-item-7 h4, .section-body-deals-item .section-body-deals-item-8 h4, .section-body-deals-item .section-body-deals-item-9 h4, .section-body-deals-item .section-body-deals-item-10 h4, .section-body-deals-item .section-body-deals-item-11 h4, .section-body-deals-item .section-body-deals-item-12 h4, .section-body-deals-item .section-body-deals-item-13 h4, .section-body-deals-item .section-body-deals-item-14 h4 {
+        padding: 1rem 0; }
+      .section-body-deals-item-1 {
+        background: #3f65ce;
+        color: #fff; }
+        .section-body-deals-item-1 .circle {
+          background: #d8cc2a; }
+        .section-body-deals-item-1 .lorem-1, .section-body-deals-item-1 .lorem-2 {
+          padding: 5px;
+          margin-left: 3px;
+          background-color: #607fd6;
+          border-radius: 10px; }
+      .section-body-deals-item-2 .circle {
+        background: #992a2a; }
+      .section-body-deals-item-2 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #90a6e3;
+        border-radius: 10px;
+        color: #3f65ce; }
+      .section-body-deals-item-3 .circle {
+        background: #d8cc2a; }
+      .section-body-deals-item-3 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #f3b1b1;
+        border-radius: 10px;
+        color: #e65858; }
+      .section-body-deals-item-4 .circle {
+        background: #2c7447; }
+      .section-body-deals-item-4 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #90a6e3;
+        border-radius: 10px;
+        color: #3f65ce; }
+      .section-body-deals-item-4 .lorem-2 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #f3b1b1;
+        border-radius: 10px;
+        color: #e65858; }
+      .section-body-deals-item-5 .circle {
+        background: #2c7447; }
+      .section-body-deals-item-5 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #f0ebab;
+        border-radius: 10px;
+        color: #d8cc2a; }
+      .section-body-deals-item-6 .circle {
+        background: #d8cc2a; }
+      .section-body-deals-item-6 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #90a6e3;
+        border-radius: 10px;
+        color: #3f65ce; }
+      .section-body-deals-item-7 .circle {
+        background: #2c7447; }
+      .section-body-deals-item-7 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #90a6e3;
+        border-radius: 10px;
+        color: #3f65ce; }
+      .section-body-deals-item-8 .circle {
+        background: #d8cc2a; }
+      .section-body-deals-item-8 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #f3b1b1;
+        border-radius: 10px;
+        color: #e65858; }
+      .section-body-deals-item-9 {
+        color: #fff;
+        background: #ec882a; }
+        .section-body-deals-item-9 .circle {
+          background: #e65858; }
+        .section-body-deals-item-9 .lorem-1 {
+          padding: 5px;
+          margin-left: 3px;
+          background-color: #ef9d4f;
+          border-radius: 10px; }
+      .section-body-deals-item-10 .circle {
+        background: #2c7447; }
+      .section-body-deals-item-10 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #f0ebab;
+        border-radius: 10px;
+        color: #d8cc2a; }
+      .section-body-deals-item-11 .circle {
+        background: #2c7447; }
+      .section-body-deals-item-11 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #90a6e3;
+        border-radius: 10px;
+        color: #3f65ce; }
+      .section-body-deals-item-11 .lorem-2 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #f3b1b1;
+        border-radius: 10px;
+        color: #e65858; }
+      .section-body-deals-item-12 .circle {
+        background: #992a2a; }
+      .section-body-deals-item-12 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #90a6e3;
+        border-radius: 10px;
+        color: #3f65ce; }
+      .section-body-deals-item-13 {
+        color: #fff;
+        background: #e65858; }
+        .section-body-deals-item-13 .circle {
+          background: #d8cc2a; }
+        .section-body-deals-item-13 .lorem-1 {
+          padding: 5px;
+          margin-left: 3px;
+          background-color: #f3b1b1;
+          border-radius: 10px;
+          color: #e65858; }
+      .section-body-deals-item-14 .circle {
+        background: #2c7447; }
+      .section-body-deals-item-14 .lorem-1 {
+        padding: 5px;
+        margin-left: 3px;
+        background-color: #4bbb75;
+        border-radius: 10px;
+        color: #2c7447; }
